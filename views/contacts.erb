@@ -1,0 +1,11 @@
+<hi> Welcome to<%=@crm_app_name%></hi>
+<h1>All Contacts</h1>
+
+<ul>
+<% @contacts.each do |contact| %>
+  <li>
+  <%= contact.first_name %> <%= contact.last_name %> <%= contact.email %> <%= contact.note %>
+  </li>
+<% end %>
+</ul>
+
